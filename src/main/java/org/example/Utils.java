@@ -22,11 +22,12 @@ public class Utils extends BasePage {
         driver.findElement(by).sendKeys(text);
     }
 //creating object to get text from written text
-    public void getTextFromElement(By by) {
+    public String getTextFromElement(By by) {
         String text= driver.findElement(by).getText();
         System.out.println(text);
 
      // return  driver.findElement(by).getText();
+        return text;
     }
 //creating object to get simple date formate
     public String getTimeStamp() {
